@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Header from './header';
-import Navbar from './compenents/Navbar';
+import Navbar from './components/Navbar';
 import reportWebVitals from './reportWebVitals';
 import App from './pages/home';
+import Input from './components/Input.jsx'
+import index from "./pages/home/index.css"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App/>
+    <App />
     <Header/>
     <Navbar/>
     <home/>
