@@ -1,0 +1,24 @@
+{
+    "title" : "mon titre",
+    "desc"  : "lorem",
+    "cars"  : [
+        {
+            "_id" : 1,
+            "mark" : "bmw",
+            "colors" : "black",
+            "price" : "30000€"
+        },
+        {
+            "_id" : 2,
+            "mark" : "Audi",
+            "colors" : "black",
+            "price" : "30000€"
+        },
+        {
+            "_id" : 2,
+            "mark" : "Ford",
+            "colors" : "black",
+            "price" : "30000€"
+        }
+    ]
+}

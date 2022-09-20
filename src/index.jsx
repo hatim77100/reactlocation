@@ -6,10 +6,37 @@ import reportWebVitals from './reportWebVitals';
 import App from './pages/home';
 import Input from './components/Input.jsx'
 import index from "./pages/home/index.css"
+import data from "./data.json"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {data.title}
+    <br/>
+    {data.desc}
+    <br/>
+    {data.cars[0].colors}
+    <br/>
+    {data.cars[2].colors}
+    <br/>
+    {data.cars.map((car) => {
+      return (<div className=' flex flex-col items-center'>
+       key={car._id}
+        {car.mark}
+        {car.desc}
+        {car.color}
+        <span> marque : {car.mark[2]}</span>
+        <br />
+        <span> marque : {car.mark}</span>
+        <br />
+        <span> marque : {car.mark}</span>
+        <br />
+        <div> 
+          {data.cars[2].price}
+        </div>
+      </div>
+     )
+    })}
     <App />
     <Header/>
     <Navbar/>
